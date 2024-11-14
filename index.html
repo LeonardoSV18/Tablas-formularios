@@ -3,11 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablas y formularios</title>
 </head>
 <body>
 
+    <h1>Tablas y formularios</h1>
     
+<table border="1px">
+
+    <h2>Tablas</h2>
+     <tr>
+         <th>Nombre</th>
+         <th>Apellido</th>
+         <th>Correo</th>
+    </tr>
+    <tr>
+        <td>Leonardo</td>
+        <td>Salazar</td>
+        <td>leosalazarv18@gmail.com</td>
+    </tr>
+    <tr>
+
+      <td>Jose</td>
+     <td>Guzman</td>
+     <td>jguzman@gmail.com</td>
+     </tr>
+
+
+
+</table>
+
+<h2>Formularios</h2> 
+
+<form action="archivo_que_procesa_los_datos_php">
+
+ <!--Atributos aceptados por el input de text: placeholder, value, required, disabled, name-->
+
+    <label for="nombre_de_usuario">Nombre:</label>
+    <input name="nombre_de_usuario" type="text" placeholder="Nombre" required>
+
+    <label for="correo">Email:</label>
+    <input name="correo" type="email" placeholder="e-mail" required>
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input name="password" type="password" placeholder="Password" required>
+
+    <br><br>
+
+    <!--Textarea-->
+    <label for="comentarios">Comentarios</label>
+    <br>
+    <textarea name="comentarios" rows="6" cols="50"></textarea>
+
+    <!--Select-->
+
+    <br>
+
+    <label for="sabores">Sabores:</label>
+
+    <br>
+
+    <select name="sabores">
+        <option value="" selected disabled hidden>Selecciona una opción:</option>
+        <option value="Vainilla">Vainilla</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Fresa">Fresa</option>
+
+    </select>
+
+    <br><br>
+
+    <!--Radio-->
+
+    <label for="genero">Genéro:</label>
+    <br>
+    <input type="radio" name="genero"> Masculino
+    <input type="radio" name="genero"> Femenino
+
+    <br><br>
+
+    <!--Checkbox-->
+
+    <label for="terminos">Aceptas nuestros terminos y condiciones : </label>
+
+    <br>
+    <input type ="Checkbox"> Si 
+
+    <br>
     
+     <!---Enviar / submit -->
+
+    <button type="submit">Enviar</button>
+
 </body>
 </html>
